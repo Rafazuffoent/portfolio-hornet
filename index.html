@@ -100,6 +100,38 @@
   .dir {
     right: -300px;
   }
+
+
+/* ============================
+        RESPONSIVIDADE
+   ============================ */
+@media (max-width: 800px) {
+
+  /* diminui as imagens */
+  .img-lateral {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 180px;
+    margin: 0 auto 20px auto;  /* centraliza */
+    transform: none;
+    opacity: 1; /* SEM hover → sempre visível */
+    filter: none;
+  }
+
+  /* remove posição lateral */
+  .esq, .dir {
+    left: 0;
+    right: 0;
+  }
+
+  /* texto continua normal */
+  .bloco {
+    text-align: center;
+    padding-top: 0;
+  }
+}
 </style>
 </head>
 <body>
