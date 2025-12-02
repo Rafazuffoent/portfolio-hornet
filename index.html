@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hornet – Portfolio</title>
+
+<style>
+  body {
+  background: url("fundo.png") no-repeat center fixed;
+  background-size: cover;
+    margin: 0;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .historia {
+
+  text-align: center;
+
+  }
+
+    .conhecimento {
+
+  text-align: center;
+
+  }
+
+    .armas {
+
+  text-align: center;
+
+  }
+
+    .persona {
+
+  text-align: center;
+
+  }
+
+      .fim {
+
+  text-align: center;
+
+  }
+
+  /* COLUNA DE TEXTO CENTRAL */
+  .conteudo {
+    width: min(700px, 90%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;        /* espaço entre seções */
+  }
+
+  /* Cada parágrafo/tópico */
+  .bloco {
+    position: relative;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .fonte {
+    position: relative;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgb(102, 102, 102);
+      text-align: center;
+  }
+
+  /* IMAGENS LATERAIS */
+  .img-lateral {
+    position: absolute;
+    top: 50%;
+    width: 260px;
+    transform: translateY(-50%) translateX(0px);
+    opacity: 0;
+    filter: blur(6px);
+    transition: 1.2s ease;
+  }
+
+  /* anima quando o bloco passa o mouse ou encosta no texto */
+  .bloco:hover .img-lateral {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(-50%) translateX(0);
+  }
+
+  /* lado esquerdo */
+  .esq {
+    left: -300px;
+  }
+
+  /* lado direito */
+  .dir {
+    right: -300px;
+  }
+</style>
+</head>
+<body>
+
+<div class="conteudo">
+
+  <div class="bloco">
+    <img class="img-lateral esq" src="hornet1.png" alt="Hornet 1">
+    <h2 class="historia">Quem sou eu?</h2>
+    <p>
+      Hornet! Filha de Rei Pálie com Herrah, a besta, antiga princesa guerreira do reino de Hallownest, agora, uma peregrina, em busca de alcançar a cidadela, no topo de Fiarlongo, para quem sabe libertar os restantes habitantes do controle desta tão falada "Mãe-Seda".
+    </p>
+  </div>
+
+  <div class="bloco">
+    <img class="img-lateral dir" src="hornet2.png" alt="Hornet 2">
+    <h2 class="conhecimento">Conhecimentos</h2>
+    <p>
+      Árdua, com extrema inteligência e ampla atitude no ambiente de batalha, sempre pronta para o combate, com uma visão mais estratégica e oportunista, ao invés de um comportamento mais espontâneo e bruto, buscando sempre acabar com os confrontos da forma mais prática o possível, sempre esperando o momento certo para agir.
+    </p>
+  </div>
+
+  <div class="bloco">
+    <img class="img-lateral esq" src="hornet3.png" alt="Hornet 3">
+    <h2 class="armas">Armas e Habilidades</h2>
+    <p>
+      Sempre com sua agulha, para todas as ocasiões, mas nunca só com ela. Empunha suas diversas ferramentas, armadilhas e emboscadas, pronta para lidar com qualquer tipo de situação. Através de seu longo tempo de treinamento, pode escalar paredes, e tocar uma melodia suave e sedutora, acalmando todos ao redor, usando apenas um mero fio de seda, e o buraco em sua agulha.
+    </p>
+  </div>
+
+  <div class="bloco">
+    <img class="img-lateral dir" src="hornet4.png" alt="Hornet 4">
+    <h2 class="persona">Personalidade</h2>
+    <p>
+      Firme, independente e orgulhosa, mas com um senso de compaixão e justiça por todos ao seu redor, dos mais baixos habitantes de suas terras, aos mais altos líderes de regiões próximas. Sempre determinada a cumprir com o certo, e seguir até o final em seus objetivos.
+    </p>
+  </div>
+  
+  <div class="fonte">
+    <h4>Site de amostra desenvolvido por: Rafael Zuffo Entschev</h4> <h4 class="fim"> Fonte: <a href="https://hollowknight-fandom-com.translate.goog/wiki/Hornet?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc">wiki fandom</a></h4> 
+
+
+
+  </div>
+
+
+</div>
+
+</body>
+</html>
